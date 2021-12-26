@@ -15,10 +15,16 @@
 <font face="黑体" color=yellow size=5>不常用命令</font>
 ##### 修改提交记录:
 ```bash
-git rebase -i HEAD~1
-git commit --amend
+git rebase -i HEAD~3        # 3此处为可变，数值表示需要修改的最近几条提交的数量
+git commit --amend 
 git rebase --continue
-三条命令组合使用
+三条语句组合使用
+例如修改最后一条提交记录的时间
+1.git rebase -i HEAD~1，输入完命令后在弹出框内选择commit，修改commit前的标识为edit
+2.git commit --amend
+3.GIT_COMMITTER_DATE="2021-12-26T23:01:07" git commit --amend --date="2021-12-26T23:01:07"
+4.git rebase --continue
+5.git push  --force        # 不推荐使用的命令
 ```
 
 ##### 修改提交用户名和邮箱
