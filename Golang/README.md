@@ -2,10 +2,10 @@
 
 #### 初始化空变量
 map:
-- `var a map[string]string` 
+- `var a map[string]string`
 
 slice:
-- 1
+- `var b = make([]string, 0)`
 
 #### 初始化赋值变量
 map:
