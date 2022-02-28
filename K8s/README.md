@@ -2,7 +2,7 @@
 
 
 ## 💔常见问题
-### 1.kubectl命令无权限问题
+###### 1.kubectl命令无权限问题
 ```
 修改配置文件权限，例如： sudo chmod 666 /etc/rancher/k3s/k3s.yaml   # 此处为k3s配置，其它同理
 ```
