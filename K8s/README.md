@@ -1,9 +1,9 @@
 # K8s
 
 ### 0.config
-####0.1 获取kubeconfig
+#### 0.1 获取kubeconfig
 `kubectl config view`
-####0.2 通用逻辑
+#### 0.2 通用逻辑
 - -A : 表示获取全部命名空间的对象
 
 ### 1.namespace
