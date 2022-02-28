@@ -1,4 +1,4 @@
-# K8s
+# K8s常用命令速查
 
 ### 0.config
 #### 0.1 获取kubeconfig
