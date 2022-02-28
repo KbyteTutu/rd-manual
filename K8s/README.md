@@ -1,5 +1,13 @@
-# K8s常用命令速查
+# K8s
 
+
+## 常见问题
+###### 1.kubectl命令无权限问题
+```
+修改配置文件权限，例如： sudo chmod 666 /etc/rancher/k3s/k3s.yaml   # 此处为k3s配置，其它同理
+```
+
+## 常用命令
 ### 0.config
 #### 0.1 获取kubeconfig
 `kubectl config view`
