@@ -1,6 +1,5 @@
 # K8s
 
-
 ## 💔常见问题
 ###### 1.kubectl命令无权限问题
 ```
@@ -16,14 +15,15 @@
 
 ### 1.namespace
 #### 1.1 获取所有工作空间
-```bash
-kubectl get namespace
-kubectl get ns            # namespace可简写为ns
-```
-#### 1.2 查看当前工作空间
+`kubectl get namespace  # namespace可简写为ns`
+#### 1.2 创建命名空间
+`kubectl create namespace <insert-namespace-name-here`
+#### 1.3 删除命名空间
+`kubectl delete namespaces <insert-some-namespace-name>`
+#### 1.4 查看当前工作空间
 `kubectl config view | grep namespace`
-#### 1.3 切换命名空间
-`kubectl config set-context --current --namespace=<名字空间名称>`
+#### 1.5 切换命名空间
+`kubectl config set-context --current --namespace=<insert-namespace-name-here>`
 
 ### 2.node
 #### 2.1 查看集群所有节点的状态
