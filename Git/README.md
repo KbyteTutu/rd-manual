@@ -1,5 +1,6 @@
-常用命令
-======
+# GIT
+
+### ✅常用命令✅
 
 ##### 新建tag
 `git tag <tag_name>`
@@ -9,12 +10,12 @@
 
 ##### 推送tag
 `git push --tags`
+`git push --tag`
 
 ##### 控制台命令行设置为彩色输出
 `git config color.ui true`
 
-不常用命令
-======
+### 🔶不常用命令🔶
 
 ##### 回滚到指定版本
 ```bash
@@ -56,16 +57,19 @@ fi
 ```
 
 ##### 拷贝git项目到新库步骤
+```bash
 1. git clone --bare git@github.com:miaoyc666/rd-manual.git
 2. 新建新的git库，空白库：git@github.com:miaoyc666/rd-manual_new.git
 3. cd rd-manual.git
 4. git push --mirror git@github.com:miaoyc666/rd-manual_new.git
+```
 
 ##### 切换git库的两个方法
+```bash
 1. 重新git clone项目；
 2. 修改.git/config文件，将git@github.com:miaoyc666/rd-manual.git替换为git@github.com:miaoyc666/rd-manual_new.git
+```
 
-尽量不要使用的命令
-======
+### ❌尽量不要使用的命令❌
 ##### 强行推送tag到远端
 `git push --force`
