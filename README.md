@@ -8,3 +8,5 @@
 - [调试](./Debug/README.md)
 - [Nebula](./Nebula/README.md)
 - [K8s](./K8s/README.md)
+- [Nginx](./Nginx/README.md)
+- [Python](./Python/README.md)

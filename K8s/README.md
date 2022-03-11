@@ -55,8 +55,16 @@ kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -
 kubectl get secrets        
 kubectl get secrets -A
 ```
-#### 4.2 创建secrets
-[Secret | Kubernetes](https://kubernetes.io/zh/docs/concepts/configuration/secret/)
+#### 4.2 创建secrets（以docker仓库为例）
+
+基于用户名密码创建
+```bash
+kubectl create secret docker-registry <key name> --docker-server=<cluster_CA_domain>:8500 --docker-username=<user_name> --docker-password=<user_password> --docker-email=<user_email>
+```
+基于docker配置文件创建
+```bash
+kubectl create secret generic harborsecret --from-file=.dockerconfigjson=/root/.docker/config.json --type=kubernetes.io/dockerconfigjson
+```
 #### 4.3 查看secret信息
 `kubectl get secret {secret name} -o yaml`
 
@@ -76,3 +84,6 @@ kubectl desctibe pods                # 描述所有pod
 ### 7.api
 获取所有可用API版本
 `kubectl api-versions`
+获取api权限列表
+`kubectl api-resources`
+
