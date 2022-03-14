@@ -10,3 +10,4 @@
 - [K8s](./K8s/README.md)
 - [Nginx](./Nginx/README.md)
 - [Python](./Python/README.md)
+- [Mysql](./Mysql/README.md)
