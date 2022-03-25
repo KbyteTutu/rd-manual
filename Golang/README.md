@@ -41,3 +41,34 @@ for i < l {
 	}
 }
 ```
+
+
+### 格式转换
+#### float转string
+```go
+strScore := strconv.FormatFloat(float64(score), 'f', 0, 32)
+str_ := fmt.Sprintf("%f", floatVar)
+```
+#### int转string
+```go
+str := strconv.Itoa(score)
+int_ := fmt.Sprintf("%d", intVar)
+```
+#### []byte转string
+```go
+a := string(b)
+```
+#### string转[]byte
+```go
+a := []byte(b)
+```
+
+### 时间转换
+
+#### unix时间戳转标准时间字符串
+```go
+timeString := time.Unix(timestamp, 0).Format("2006-01-02 
+15:04:05")
+```
+
+#### 标准时间字符串转ISODate
