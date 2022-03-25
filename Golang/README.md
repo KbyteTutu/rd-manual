@@ -67,8 +67,7 @@ a := []byte(b)
 
 #### unix时间戳转标准时间字符串
 ```go
-timeString := time.Unix(timestamp, 0).Format("2006-01-02 
-15:04:05")
+timeString := time.Unix(timestamp, 0).Format("2006-01-02 15:04:05")
 ```
 
 #### 标准时间字符串转ISODate
