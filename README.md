@@ -12,3 +12,6 @@
 - [Python](./Python/README.md)
 - [Mysql](./Mysql/README.md)
 - [HDFS](./HDFS/README.md)
+
+#### 提升开发效率的技巧和工具
+- [ssh免密](./Efficient/ssh.md)
