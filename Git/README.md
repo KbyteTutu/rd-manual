@@ -17,6 +17,9 @@
 
 ### 🔶不常用命令🔶
 
+##### 设置本地分支对应的远程分支的方法
+`git push -u origin {branch name}`
+
 ##### 回滚到指定版本
 ```bash
 git reset --hard {commit_id}
@@ -34,7 +37,7 @@ git rebase --continue
 2.git commit --amend
 3.GIT_COMMITTER_DATE="2021-12-26T23:01:07" git commit --amend --date="2021-12-26T23:01:07"
 4.git rebase --continue
-5.git push  --force        # 不推荐使用的命令
+5.git push --force        # 不推荐使用的命令
 ```
 
 ##### 修改提交用户名和邮箱
